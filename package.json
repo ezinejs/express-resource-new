@@ -1,12 +1,12 @@
 {
-  "name": "express-resource-new",
-  "description": "An enhancement to express-resource",
+  "name": "express-resource-custom",
+  "description": "a fork of express-resource-new",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tpeden/express-resource-new"
+    "url": "https://github.com/ezinejs/express-resource-new.git"
   },
-  "author": "TJ Peden <tj.peden@tj-coding.com>",
+  "author": "Leo Zhu <lzhu@yorkbay.com>",
   "dependencies": { 
     "lingo": ">=0.0.4",
     "methods": "0.0.1"
