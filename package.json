@@ -1,7 +1,7 @@
 {
   "name": "express-resource-ezinejs",
   "description": "a fork of express-resource-new",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/ezinejs/express-resource-new.git"
