@@ -1,5 +1,5 @@
 [![build status](https://secure.travis-ci.org/tpeden/express-resource-new.png)](http://travis-ci.org/tpeden/express-resource-new)
-# Express Resource (custom)
+# Express Resource (ezinejs)
 
 Express Resource Custom is a fork of express-resource new with custom controller file
 
@@ -15,14 +15,14 @@ express-resouce-new provides resourceful routing to express with improved nestin
 
 npm:
 
-    $ npm install express-resource-custom
+    $ npm install express-resource-ezinejs
 
 ## Usage
 
 In your main application file (i.e. app.js or server.js) just add the following:
 
     var express = require('express'),
-        Resource = require('express-resource-custom'), // <- Add this (Resource really isn't needed)
+        Resource = require('express-resource-ezinejs'), // <- Add this (Resource really isn't needed)
         app = express.createServer();
     
     app.configure(function(){
@@ -95,7 +95,7 @@ express-resource-new also supports a special action, `all`, that gets called for
 Lastly just call `app.resource()` with your controller name. Nesting is done by passing a function that can call `app.resource()` for each nested resource. Options can also be passed as the second parameter which override the options set in the controller itself.
 
     var express = require('express'),
-        Resource = require('express-resource-custom'),
+        Resource = require('express-resource-ezinejs'),
         app = express.createServer();
     
     app.configure(function(){
