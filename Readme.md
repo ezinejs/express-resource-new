@@ -5,9 +5,9 @@ Express Resource Custom is a fork of express-resource new with custom controller
 
 Options can also be passed as the second parameter which override the options set in the controller itself.
 
-app.resource('posts', { name: 'resources' });
+app.resource('posts', {controller: 'resources'});
 
-It will load controller file at /controllers/resources
+It will load controller file at /controllers/resources instead of default /controllers/posts
 
 express-resouce-new provides resourceful routing to express with improved nesting and auto-require.
 
