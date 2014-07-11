@@ -357,8 +357,7 @@ var methods = {
     
     this._trail = this._trail || [];
     this.resources = this.resources || {};
-    this.name = options.name || name;
-    var controller = this._load(this.name);
+    var controller = this._load(options.controller || name);
     var resource = new Resource(this, name, $({}, controller.options, options));
     
     this.addResource(resource);
