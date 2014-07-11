@@ -1,5 +1,7 @@
 [![build status](https://secure.travis-ci.org/tpeden/express-resource-new.png)](http://travis-ci.org/tpeden/express-resource-new)
-# Express Resource (new)
+# Express Resource (custom)
+
+Express Resource Custom is a fork of express-resource new with custom controller file
 
 express-resouce-new provides resourceful routing to express with improved nesting and auto-require.
 
