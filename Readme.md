@@ -3,20 +3,26 @@
 
 Express Resource Custom is a fork of express-resource new with custom controller file
 
+Options can also be passed as the second parameter which override the options set in the controller itself.
+
+app.resource('posts', { name: 'resources' });
+
+It will load controller file at /controllers/resources
+
 express-resouce-new provides resourceful routing to express with improved nesting and auto-require.
 
 ## Installation
 
 npm:
 
-    $ npm install express-resource-new
+    $ npm install express-resource-custom
 
 ## Usage
 
 In your main application file (i.e. app.js or server.js) just add the following:
 
     var express = require('express'),
-        Resource = require('express-resource-new'), // <- Add this (Resource really isn't needed)
+        Resource = require('express-resource-custom'), // <- Add this (Resource really isn't needed)
         app = express.createServer();
     
     app.configure(function(){
@@ -89,7 +95,7 @@ express-resource-new also supports a special action, `all`, that gets called for
 Lastly just call `app.resource()` with your controller name. Nesting is done by passing a function that can call `app.resource()` for each nested resource. Options can also be passed as the second parameter which override the options set in the controller itself.
 
     var express = require('express'),
-        Resource = require('express-resource-new'),
+        Resource = require('express-resource-custom'),
         app = express.createServer();
     
     app.configure(function(){
